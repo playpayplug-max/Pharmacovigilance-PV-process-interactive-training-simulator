@@ -227,3 +227,39 @@ a:hover, a:focus-visible {
   margin: 0;
   color: var(--color-muted);
 }
+
+/* Buttons */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  font: inherit;
+  line-height: 1.25;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
+.button-primary {
+  color: #ffffff;
+  background-color: var(--link);
+  border-color: var(--link);
+}
+
+.button-primary:hover,
+.button-primary:focus-visible {
+  background-color: var(--link-hover);
+  border-color: var(--link-hover);
+}
+
+.feature-card .button {
+  margin-top: var(--space-4);
+}
