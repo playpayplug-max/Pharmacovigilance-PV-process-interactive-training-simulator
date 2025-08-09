@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+
+    <!-- Viewport and responsive behavior -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <!-- Basic metadata -->
+    <meta name="description" content="Concise, human-readable page description (≤160 chars)." />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Color scheme and theme color for modern UIs -->
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b0f19" media="(prefers-color-scheme: dark)" />
+
+    <!-- Icons and PWA hooks -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://example.com/" />
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Skip link improves keyboard navigation -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="/" rel="home">Site Name</a>
+
+        <!-- Primary navigation -->
+        <nav class="primary-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="site-main" tabindex="-1">
+      <article class="page">
+        <header class="page-header">
+          <h1 class="page-title">Page Heading</h1>
+        </header>
+
+        <section class="page-section" aria-labelledby="intro-heading">
+          <h2 id="intro-heading">Introduction</h2>
+          <p>Start your content here.</p>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          © <time datetime="2025">2025</time> Your Company. All rights reserved.
+        </p>
+
+        <!-- Secondary (footer) navigation -->
+        <nav class="footer-nav" aria-label="Footer">
+          <ul class="nav-list">
+            <li><a href="/privacy">Privacy</a></li>
+            <li><a href="/terms">Terms</a></li>
+            <li><a href="/accessibility">Accessibility</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <noscript>
+      <!-- Inform users without JS; content remains accessible -->
+      <p>JavaScript is disabled. The site works, but some features may be limited.</p>
+    </noscript>
+  </body>
+</html>
