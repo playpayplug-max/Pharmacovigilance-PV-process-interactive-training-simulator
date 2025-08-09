@@ -263,3 +263,8 @@ a:hover, a:focus-visible {
 .feature-card .button {
   margin-top: var(--space-4);
 }
+
+/* Allow anchors to look like buttons */
+a.button {
+  text-decoration: none;
+}
